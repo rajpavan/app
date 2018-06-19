@@ -1,0 +1,19 @@
+.alertsContainer {
+   height: 220px;
+   padding: 10px;
+}
+
+.btn-addNewAlert {
+    margin-left: 0px;
+    margin-top: 11px;
+}
+
+input {
+    width: 290px;
+    margin-top: 11px;
+}
+
+::ng-deep .alerts {
+    background-color: blueviolet;
+    width: 30%;
+}

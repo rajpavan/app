@@ -1,0 +1,22 @@
+<div class="root__container">
+  <header class="main__header">
+
+    <div class="left__section" (click)="toggleMenu()">
+      <i class="material-icons hamburger__icon">
+        dehaze
+      </i>
+      <h3>Menu</h3>
+      <app-menu *ngIf="showMenu"></app-menu>
+    </div>
+
+    <h1 [routerLink]="['/home']" class="header__text">Telgro</h1>
+
+    <div class="mode-toggle__container">
+      <a [routerLink]="['/register']" class="register">Register</a>
+      <span> | </span>
+      <a [routerLink]="['/signin']" class="signin">Sign-In</a>
+    </div>
+
+  </header>
+
+</div>

@@ -1,0 +1,55 @@
+.userinfo {
+    padding: 2rem;
+    margin: 10rem;
+    width: 70rem;
+    height: 25rem;
+    background-color: white;
+    position: relative;
+    top: auto;
+    left: 8%;
+    bottom: auto;
+    right: auto;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 2rem rgb(138, 140, 226);
+    border-radius: 1.75rem;
+    display: inline-block;
+}
+
+.userinfo li {
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 10px;
+    /* background-color: black; */
+}
+
+.userinfo li h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+.userinfo li h6 span {
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+     
+.userinfo img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 900px;
+    top: 5rem;
+    bottom: 40px;
+}
+     
+.userinfo button {
+    float: right;
+    margin-right: 30px;
+    margin-top: 2rem;
+}
+
+.btnContinueCancel{
+    margin-top: -4%;
+    margin-right: 2%;
+}
