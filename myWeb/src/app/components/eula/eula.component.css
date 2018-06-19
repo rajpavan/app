@@ -1,7 +1,7 @@
 .eula {
     padding: 2rem;
     margin: 10rem;
-    width: 75rem;
+    width: 72rem;
     height: 25rem;
     background-color: white;
     position: relative;
@@ -10,7 +10,7 @@
     bottom: auto;
     right: auto;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 150px;
     box-shadow: 0 0 2rem rgb(138, 140, 226);
     border-radius: 1.75rem;
     display: inline-block;

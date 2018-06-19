@@ -6,19 +6,19 @@ import { AppHeaderModule } from './app-header.module';
 import { HomeComponent } from '../components/home/home.component';
 import { HomewithsessionComponent } from '../components/homewithsession/homewithsession.component';
 import { TrymeComponent } from '../components/tryme/tryme.component';
-import { FooterComponent } from '../components/footer/footer.component';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    AppHeaderModule
+    AppHeaderModule,
+    MaterialModule
   ],
 
   declarations: [
     HomeComponent,
     HomewithsessionComponent,
-    TrymeComponent,
-    FooterComponent
+    TrymeComponent
   ],
 
   exports: [

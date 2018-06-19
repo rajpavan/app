@@ -8,11 +8,21 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class MenuComponent implements OnInit {
 
-  public showMenu: boolean = true;
+  @Input() name: string = 'show';
+  @Input() email: string = 'show';
+
+  showName: boolean;
+  showEmail: boolean;
 
   constructor() { }
 
   ngOnInit() {
+    if (this.name == 'show') {
+      this.showName = true;
+    }
+    if (this.email == 'show') {
+      this.showEmail = true;
+    }
   }
 
 }

@@ -6,11 +6,11 @@
     background-color: white;
     position: relative;
     top: auto;
-    left: 8%;
+    left: 5%;
     bottom: auto;
     right: auto;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 150px;
     box-shadow: 0 0 2rem rgb(138, 140, 226);
     border-radius: 1.75rem;
     display: inline-block;
@@ -40,7 +40,6 @@
     position: absolute;
     left: 900px;
     top: 5rem;
-    bottom: 40px;
 }
      
 .userinfo button {

@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 
 export class HeaderComponent implements OnInit {
 
-  private showMenu = false;
+  private showMenu: boolean;
 
   constructor(private router: Router) { }
 

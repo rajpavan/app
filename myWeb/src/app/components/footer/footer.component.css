@@ -1,13 +1,13 @@
 .footer {
     position: relative;
-    width: 84.5rem;
+    width: 84.4rem;
     background: linear-gradient(to right, rgb(80, 117, 185), rgb(132, 176, 189));
     color: black;
     height: 15rem;
     z-index: -3;
     font-family: Helvetica;
     left: -0.47rem;
-    bottom: -5rem;
+    bottom: -10rem;
     font-size: 0.7rem;
 }
  
@@ -52,14 +52,13 @@
 .copyright {
     position: absolute;
     left: 50px;
-    bottom: 20px;
 }
 
 .social {
     width: 150px;
     height: 75px;
     position: relative;
-    top: 225px;
+    top: 200px;
     left: 484px;
 }
 
@@ -79,14 +78,12 @@
     height: 60px;
     position: absolute;
     left: 0px;
-    bottom: 45px;
 }
 .google-plus {
     width: 60px;
     height: 60px;
     position: absolute;
     left: 47px;
-    bottom: 45px;
 }
 
 .linkedin {
@@ -94,13 +91,11 @@
     height: 60px;
     position: absolute;
     left: 89px;
-    bottom: 45px;
 }
 
 .twitter {
     width: 60px;
     height: 60px;
     position: absolute;
-    left: 132px;    
-    bottom: 45px;
+    left: 132px;
 }

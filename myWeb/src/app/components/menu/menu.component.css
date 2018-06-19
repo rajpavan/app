@@ -1,139 +1,3 @@
-.side-menu__container {
-  position: fixed;
-  left: 0;
-  top: 6rem;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 25;
-}
-
-.side-menu__container-active {
-  pointer-events: auto;
-}
-
-.side-menu__container::before {
-  content: '';
-  cursor: pointer;
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #0c1066;
-  opacity: 0;
-  transition: opacity 300ms linear;
-  /* will-change changes the value that it is assigned to, from the prev css given */
-  /* Here it changes the opacity of the slide-menu class */
-  will-change: opacity;
-}
-
-.side-menu__container-active::before {
-  opacity: 0.3;
-}
-
-.slide-menu {
-  box-sizing: border-box;
-  /* transform changes the direction in which the menu bar slide in from */
-  transform: translateY(-203%);
-  position: relative;
-  top: 0;
-  left: 0.3rem;
-  z-index: 10;
-  height: 100%;
-  width: 100%;
-  /* max-width of 100rem covers the whole page */
-  max-width: 90rem;
-  max-height: 12rem;
-  background-color: white;
-  box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr 4fr 1fr;
-  grid-gap: 1rem;
-  transition: transform 300ms linear;
-  will-change: transform;
-}
-
-.slide-menu-active {
-  transform: none;
-}
-
-.menu-header {
-  background: linear-gradient(to right, rgb(172, 226, 193), #afb0e7);
-  display: grid;
-  grid-template-rows: 1fr 4fr 4fr;
-  grid-template-columns: 1fr 4fr;
-  grid-template-areas: "greeting greeting" "image details" "new new";
-  box-sizing: border-box;
-  width: 100%;
-  align-content: center;
-  color: #000;
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
-}
-
-.greeting__text {
-  grid-area: greeting;
-  font-size: 1.25rem;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
-  margin-top: 1rem;
-  justify-self: center;
-  align-self: center;
-}
-
-.account-details {
-  grid-area: details;
-  display: flex;
-  flex-flow: column;
-  margin-left: 1rem;
-  align-self: center;
-}
-
-.new {
-  grid-area: new;
-  display: flex;
-  flex-flow: column;
-  margin-left: 1rem;
-  align-self: center;
-}
-
-.name__text {
-  font-size: 1.15rem;
-  margin-bottom: 0.5rem;
-}
-
-.email__text {
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
-}
-
-.menu-body {
-  display: grid;
-  width: 100%;
-}
-
-.profile-image__container {
-  grid-area: image;
-  margin-right: 0.5rem;
-  border-radius: 50%;
-  height: 4rem;
-  width: 4rem;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  align-self: center;
-  margin-left: 2rem;
-}
-
-.profile__image {
-  max-width: 4rem;
-}
-
 .center {
     width: 90%;
     background-color: #444444;
@@ -144,7 +8,7 @@
     left: 59px;
 }
 .center h1 {
-    color: #fff;
+    color: red;
     text-align: center;
 }
      
@@ -166,5 +30,5 @@
      
 .center li a {
     margin: 30px;
-    color: aliceblue;
+    color: red;
 }

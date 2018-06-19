@@ -1,14 +1,150 @@
 .root__container {
-  width: 100%;
+  width: 84.4rem;
   height: 20vh;
+  z-index: 3;
   font-family: 'Times New Roman', Times, serif;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 0.5fr auto;
   position: fixed;
-  left: -0.2rem;
+  left: -0.55%;
   top: -0.2rem;
-  right: -0.1rem;
+  right: -10%;
+}
+
+.side-menu__container {
+  position: fixed;
+  top: 5.8rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 25;
+}
+
+.side-menu__container-active {
+  pointer-events: auto;
+}
+
+.side-menu__container::before {
+  content: '';
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0c1066;
+  opacity: 0;
+  transition: opacity 300ms linear;
+  /* will-change changes the value that it is assigned to, from the prev css given */
+  /* Here it changes the opacity of the slide-menu class */
+  will-change: opacity;
+}
+
+.side-menu__container-active::before {
+  opacity: 0.3;
+}
+
+.slide-menu {
+  box-sizing: border-box;
+  /* transform changes the direction in which the menu bar slide in from */
+  transform: translateY(-103%);
+  position: relative;
+  top: 0;
+  left: -1rem;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  /* max-width of 100rem covers the whole page */
+  max-width: 90rem;
+  max-height: 12rem;
+  background-color: white;
+  box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 4fr 1fr;
+  grid-gap: 1rem;
+  transition: transform 300ms linear;
+  will-change: transform;
+}
+
+.slide-menu-active {
+  transform: none;
+}
+
+.menu-header {
+  background: linear-gradient(to bottom, #e7ddae, rgb(172, 226, 193));
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "greeting greeting" "image details";
+  box-sizing: border-box;
+  width: 100%;
+  align-content: center;
+  color: #000;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
+}
+
+.greeting__text {
+  grid-area: greeting;
+  font-size: 1.25rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.account-details {
+  grid-area: details;
+  display: flex;
+  flex-flow: column;
+  margin-left: 1rem;
+  align-self: center;
+}
+
+.new {
+  grid-area: new;
+  display: flex;
+  flex-flow: column;
+  margin-left: 1rem;
+  align-self: center;
+}
+
+.name__text {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.email__text {
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+
+.menu-body {
+  display: grid;
+  width: 100%;
+}
+
+.profile-image__container {
+  grid-area: image;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  align-self: center;
+  margin-left: 2rem;
+}
+
+.profile__image {
+  max-width: 4rem;
 }
 
 .main__header {
@@ -16,9 +152,9 @@
   display: grid;
   /* background: linear-gradient(to left, rgb(80, 117, 185), rgb(132, 176, 189)); */
   background: linear-gradient(to right, rgb(80, 117, 185), rgb(132, 176, 189));
-  grid-template-columns: 0.3fr 1fr 0.25fr;
+  grid-template-columns: 0.3fr 0.8fr 0.4fr;
   grid-template-rows: 1fr;
-  box-shadow: 0.5rem 0.5rem 2rem rgb(154, 159, 201);
+  box-shadow: 0.2rem 0.2rem 1rem rgb(154, 159, 201);
   height: 6rem;
   /* margin: 0; */
   align-items: center;
@@ -55,6 +191,7 @@
 }
 
 .left__section h3 {
+  color: rgb(22, 22, 71);
   margin: 0%;
   margin-left: 3rem;
   cursor: pointer;
@@ -64,7 +201,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   display: inline;
-  color: blue;
+  color: rgb(22, 22, 71);
   cursor: pointer;
   text-align: center;
   padding: 0;

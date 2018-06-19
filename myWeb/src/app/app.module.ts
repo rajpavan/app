@@ -17,7 +17,7 @@ import { AppHomeModule } from './modules/app-home.module';
 import { MaterialModule } from './modules/material.module';
 
 import { AppComponent } from './app.component';
-// import { FooterComponent } from './components/footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 import { UsersessionService } from './services/usersession.service';
 import { AppRegisterService } from './services/app-register.service';
@@ -26,7 +26,7 @@ import { setInjector } from './app.globals';
 @NgModule({
   declarations: [
     AppComponent,
-    // FooterComponent
+    FooterComponent
   ],
 
   imports: [

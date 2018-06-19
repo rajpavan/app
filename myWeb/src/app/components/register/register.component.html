@@ -1,4 +1,5 @@
 <!-- <app-header loginRegister="hide" menu="hide" profile="hide"></app-header> -->
+<app-header></app-header>
 
 <div [ngSwitch]="state">
   <lib-login *ngSwitchCase="'register'" (oncomplete)="loginSuccess($event)"></lib-login>
