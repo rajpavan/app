@@ -1,7 +1,7 @@
 .footer {
     position: relative;
-    width: 84.4rem;
-    background: linear-gradient(to right, rgb(80, 117, 185), rgb(132, 176, 189));
+    width: 101%;
+    background: linear-gradient(to bottom,rgb(99, 173, 196),rgb(88, 102, 129));
     color: black;
     height: 15rem;
     z-index: -3;
@@ -50,8 +50,9 @@
 }
  
 .copyright {
-    position: absolute;
-    left: 50px;
+    position: relative;
+    left: 3%;
+    top: 90%;
 }
 
 .social {
