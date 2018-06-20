@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +9,15 @@ import { Router } from '@angular/router';
 
 export class HeaderComponent implements OnInit {
 
-  private showMenu: boolean;
+  // @Input() menu: string = "show";
+  // @Input() help: string = "show";
+  // @Input() loginRegister: string = "show";
+  // @Input() profile: string = "show";
+
+  private showMenu: boolean = false;
+  // private showHelp: boolean = false;
+  // private showLoginRegister: boolean = false;
+  // private showProfile: boolean = false;
 
   constructor(private router: Router) { }
 
