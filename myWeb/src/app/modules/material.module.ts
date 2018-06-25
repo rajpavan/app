@@ -3,7 +3,7 @@ import { MatButtonModule,
   MatCheckboxModule,
   MatProgressSpinnerModule,
   MatDialogModule,
-  MatDividerModule } from '@angular/material';
+  MatDividerModule, MatGridListModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -11,7 +11,8 @@ import { MatButtonModule,
     MatCheckboxModule,
     MatProgressSpinnerModule,
     MatDialogModule,
-    MatDividerModule
+    MatDividerModule,
+    MatGridListModule
   ],
 
   exports: [
@@ -19,7 +20,8 @@ import { MatButtonModule,
     MatCheckboxModule,
     MatProgressSpinnerModule,
     MatDialogModule,
-    MatDividerModule
+    MatDividerModule,
+    MatGridListModule
   ]
 })
 
