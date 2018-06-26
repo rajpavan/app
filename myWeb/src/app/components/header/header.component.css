@@ -3,7 +3,7 @@
   height: 7%;
   z-index: 3;
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 0.5fr auto;
@@ -205,6 +205,7 @@
   cursor: pointer;
   text-align: center;
   padding: 0;
+  font-family: "Audiowide";
 }
 
 .hamburger__icon {
