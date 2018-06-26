@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MessageBox, DialogBoxButtons } from 'messagebox';
 import { trigger, style, transition, animate, keyframes, query, stagger } from '@angular/animations';
 import { AlertService } from '@twine/alerts';
 import { AlertsCollection } from './models/alert.model';

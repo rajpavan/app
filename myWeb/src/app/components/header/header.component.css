@@ -1,21 +1,142 @@
-.root__container {
-  width: 110%;
-  height: 7%;
-  z-index: 3;
+/* mat-grid-list {
   color: white;
-  /* font-family: 'Times New Roman', Times, serif; */
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 0.5fr auto;
-  position: fixed;
-  left: -0.55%;
-  top: -0.2rem;
-  right: -10%;
 }
 
+mat-grid-tile a {
+  text-decoration: none;
+  color: white;
+}
+
+mat-grid-tile i {
+  position: absolute;
+  top: 15%;
+  z-index: 35;
+  height: 1rem;
+  width: 4rem;
+  margin-left: -2rem;
+  cursor: pointer;
+}
+
+mat-grid-tile h4 {
+  position: relative;
+  left: 2%;
+  cursor: pointer;
+}
+
+mat-grid-tile {
+  background: linear-gradient(to bottom, rgb(111, 128, 163),rgb(50, 95, 161));
+} */
+
+.main_header {
+  position: fixed;
+  z-index: 3;
+  width: 103%;
+  top: -0.01px;
+  left: -0.01px;
+  display: grid;
+  grid-template-rows: 0.08fr;
+  grid-template-columns: 0.5fr 1.5fr 0.7fr;
+  grid-template-areas: "menu header_text register";
+  grid-gap: 0 0;
+  box-sizing: border-box;
+}
+
+.main_header_text {
+  grid-area: header_text;
+  text-align: center;
+  background: linear-gradient(to bottom,rgb(111, 128, 163),rgb(50, 95, 161));
+}
+
+.main_header_text a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.menu {
+  grid-area: menu;
+  color: white;
+  justify-items: center;
+  display: inline-block;
+  background: linear-gradient(to bottom,rgb(111, 128, 163),rgb(50, 95, 161));
+}
+
+.menu i {
+  /* position: absolute; */
+  display: inline-flex;
+  z-index: 35;
+  font-size: 130%;
+  /* height: 1rem; */
+  width: 3.5rem;
+  margin-top: 9px;
+  margin-left: 1rem;
+  margin-right: -2rem;
+  cursor: pointer;
+}
+
+.menu h3 {
+  /* position: absolute; */
+  display: inline-flex;
+  margin: 0;
+  margin-top: 3px;
+  font-size: 130%;
+  height: 1rem;
+  width: 4rem; 
+  cursor: pointer;
+}
+
+.register {
+  grid-area: register;
+  background: linear-gradient(to bottom,rgb(111, 128, 163),rgb(50, 95, 161));
+}
+
+.register_button {
+  text-align: center;
+  display: inline-flex;
+  margin: 0;
+  margin-top: 3px;
+  width: 50px;
+  cursor: pointer;
+  padding: 5px 11px;
+  margin-right: 1%;
+  background-color: orangered;
+  /* position: relative; */
+  border: 1px orangered solid;
+}
+
+.register a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* .signin {
+  grid-area: signin;
+  background: linear-gradient(to bottom,rgb(111, 128, 163),rgb(50, 95, 161));
+} */
+
+.signin {
+  text-align: left;
+  margin: 0;
+  margin-top: 3px;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 5px 11px;
+  position: relative;
+}
+
+.signin a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Sliding Menu CSS */
 .side-menu__container {
   position: fixed;
-  top: 5.8rem;
+  font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+  top: 8%;
+  left: -0.1%;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -36,7 +157,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #0c1066;
+  background-color: black;
   opacity: 0;
   transition: opacity 300ms linear;
   /* will-change changes the value that it is assigned to, from the prev css given */
@@ -45,29 +166,27 @@
 }
 
 .side-menu__container-active::before {
-  opacity: 0.3;
+  opacity: 0.7;
 }
 
 .slide-menu {
   box-sizing: border-box;
+  font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
   /* transform changes the direction in which the menu bar slide in from */
-  transform: translateY(-103%);
+  transform: translateY(-100%);
   position: relative;
   top: 0;
-  left: -1rem;
   z-index: 10;
   height: 100%;
   width: 100%;
   /* max-width of 100rem covers the whole page */
-  min-width: 20rem;
-  max-width: 90rem;
-  max-height: 12rem;
+  max-width: 100%;
+  max-height: 15rem;
   background-color: white;
-  box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+  box-shadow: 0 0 3rem rgba(0, 0, 255, 0.1);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 4fr 1fr;
-  grid-gap: 1rem;
   transition: transform 300ms linear;
   will-change: transform;
 }
@@ -76,12 +195,12 @@
   transform: none;
 }
 
-.menu-header {
-  background: linear-gradient(to bottom, #e7ddae, rgb(172, 226, 193));
+.menu_body {
+  background-color: rgb(207, 230, 226);
   display: grid;
   grid-template-rows: 1fr 4fr;
-  grid-template-columns: 1fr 4fr;
-  grid-template-areas: "greeting greeting" "image details";
+  grid-template-columns: 2fr 0.1fr;
+  grid-template-areas: "greeting close" "details details";
   box-sizing: border-box;
   width: 100%;
   align-content: center;
@@ -89,30 +208,22 @@
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
 }
 
+.close {
+  grid-area: close;
+  cursor: pointer;
+}
+
 .greeting__text {
   grid-area: greeting;
+  text-align: center;
   font-size: 1.25rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  margin-top: 1rem;
-  justify-self: center;
-  align-self: center;
+  left: 2%;
 }
 
-.account-details {
+.menu_details {
   grid-area: details;
-  display: flex;
-  flex-flow: column;
-  margin-left: 1rem;
-  align-self: center;
-}
-
-.new {
-  grid-area: new;
-  display: flex;
-  flex-flow: column;
-  margin-left: 1rem;
-  align-self: center;
 }
 
 .name__text {
@@ -120,106 +231,7 @@
   margin-bottom: 0.5rem;
 }
 
-.email__text {
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
-}
-
-.menu-body {
-  display: grid;
-  width: 100%;
-}
-
-.profile-image__container {
-  grid-area: image;
-  margin-right: 0.5rem;
-  border-radius: 50%;
-  height: 4rem;
-  width: 4rem;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  align-self: center;
-  margin-left: 2rem;
-}
-
-.profile__image {
-  max-width: 4rem;
-}
-
-.main__header {
-  width: 100%;
-  display: grid;
-  background: linear-gradient(to bottom,rgb(99, 173, 196),rgb(88, 102, 129));
-  grid-template-columns: 0.3fr 0.8fr 0.4fr;
-  grid-template-rows: 1fr;
-  box-shadow: 0.2rem 0.2rem 1rem rgb(154, 159, 201);
-  height: 6rem;
-  align-items: center;
-  transition: background-color 500ms linear;
-  animation: 1s ease-in-out 0ms 1 fadein;
-}
-
-.signin {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.1rem;
-  cursor: pointer;
-  color: white;
-}
-
-.register {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.1rem;
-  cursor: pointer;
-  color: white;
-  padding: 5px 11px;
-  border: 2px solid #14458d;
-}
-
-.left__section {
-  display: grid;
-  grid-template-rows: 1fr;
-  max-width: 6rem;
-}
-
-.left__section h3 {
-  color: white;
-  margin: 0%;
-  margin-left: 3rem;
-  cursor: pointer;
-}
-
-.header__text {
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  display: inline;
-  color: white;
-  cursor: pointer;
-  text-align: center;
-  padding: 0;
-  font-family: "Audiowide";
-}
-
-.hamburger__icon {
-  position: absolute;
-  top: 2.3rem;
-  z-index: 35;
-  height: 1rem;
-  width: 4rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  cursor: pointer;
-}
-
-@media only screen and (max-width: 100px) {
+@media only screen and (min-width: 100%) {
   .slide-menu {
     width: 100%;
   }

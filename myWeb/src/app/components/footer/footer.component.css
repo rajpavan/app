@@ -1,69 +1,169 @@
-.footer {
+.footer_headers {
+    color: yellowgreen;
     position: relative;
-    width: 101%;
-    background: linear-gradient(to bottom,rgb(99, 173, 196),rgb(88, 102, 129));
+    width: 100%;
+    /* min-width: 100%; */
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 0.2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "whytelgro services technology offerings support"
+    "whytelgro_content services_content technology_content offerings_content support_content"
+    "copyright copyright social social social";
+    align-content: center;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
+    box-sizing: border-box;
+}
+ 
+.whytelgro {
+    grid-area: whytelgro;
+    background: linear-gradient(to bottom,rgb(111, 128, 163),rgb(50, 95, 161));
+}
+
+.whytelgro_content {
+    grid-area: whytelgro_content;
+    background-color: rgb(207, 230, 226);
+}
+
+.whytelgro_content ul {
+    padding: 0;
+}
+
+.whytelgro_content li {
+    list-style-type: none;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+}
+
+.whytelgro_content a {
+    text-decoration: none;
     color: black;
-    height: 15rem;
-    z-index: -3;
-    font-family: Helvetica;
-    left: -0.47rem;
-    bottom: -10rem;
-    font-size: 0.7rem;
-}
- 
-.AboutUs {
-    width: 300px;
-    float: left;
-    position: absolute;
-    left: 2%;
-    text-align: center;
-    top: 17px;
-}
- 
-.ContactUs {
-    width: 300px;
-    position: absolute;
-    left: 500px;
-    top: 17px;
 }
 
-.ContactUs h3 {
-    margin-left: 20px;
+.services {
+    grid-area: services;
+    margin: 0;
+    display: flex;
+    background: linear-gradient(to bottom,rgb(111, 128, 163),rgb(50, 95, 161));
+}
 
+.services_content {
+    grid-area: services_content;
+    background-color: rgb(207, 230, 226);
+}
+
+.services_content ul {
+    padding: 0;
+}
+
+.services_content li {
+    list-style-type: none;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+}
+
+.services_content a {
+    text-decoration: none;
+    color: black;
+}
+
+.technology {
+    grid-area: technology;
+    background: linear-gradient(to bottom,rgb(111, 128, 163),rgb(50, 95, 161));
+}
+
+.technology_content {
+    grid-area: technology_content;
+    background-color: rgb(207, 230, 226);
+}
+
+.technology_content ul {
+    padding: 0;
+}
+
+.technology_content li {
+    list-style-type: none;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+}
+
+.technology_content a {
+    text-decoration: none;
+    color: black;
+}
+
+.offerings {
+    grid-area: offerings;
+    background: linear-gradient(to bottom,rgb(111, 128, 163),rgb(50, 95, 161));
+}
+
+.offerings_content {
+    grid-area: offerings_content;
+    background-color: rgb(207, 230, 226);
+}
+
+.offerings_content ul {
+    padding: 0;
+}
+
+.offerings_content li {
+    margin: 0;
+    list-style-type: none;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+}
+
+.offerings_content a {
+    text-decoration: none;
+    color: black;
 }
  
-.ContactUs li {
-    font-size: 18px;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    list-style: none; 
+.support {
+    grid-area: support;
+    background: linear-gradient(to bottom,rgb(111, 128, 163),rgb(50, 95, 161));
+}
+
+.support_content {
+    grid-area: support_content;
+    background-color: rgb(207, 230, 226);
+}
+ 
+.support_content li {
+    list-style: none;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
  }
 
-.ContactUs i {
-    padding: 0px 0px 0px 0px;
- } 
-
-.ContactUs a {
-    margin: 4px 0px 0px 2px;
-    padding: 1px 0px 0px 4px;
-    position: absolute;
+.support_content a {
+    color: black;
 }
- 
-.copyright {
-    position: relative;
-    left: 3%;
-    top: 90%;
+
+.support_content i {
+    color: black;
+    padding: 2px;
 }
 
 .social {
-    width: 150px;
-    height: 75px;
-    position: relative;
-    top: 200px;
-    left: 484px;
+    grid-area: social;
+    background-color: rgb(207, 230, 226);
+}
+
+.social h3 {
+    text-align: center;
+    color: black;
+}
+
+.social ul {
+    margin-left: 35%;
+}
+
+.social li {
+    list-style: none;
+    display: inline-flex;
+    padding-right: 30px;
 }
 
 .social img {
+    align-content: center;
     width: 25px;
     height: 25px;
 }
@@ -74,29 +174,8 @@
     cursor: pointer;
 }
 
-.facebook {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    left: 0px;
-}
-.google-plus {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    left: 47px;
-}
-
-.linkedin {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    left: 89px;
-}
-
-.twitter {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    left: 132px;
+.copyright {
+    grid-area: copyright;
+    color: black;
+    background-color: rgb(207, 230, 226);
 }
