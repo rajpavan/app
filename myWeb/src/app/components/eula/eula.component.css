@@ -1,32 +1,55 @@
-.eula {
-    padding: 2rem;
-    margin: 10rem;
-    width: 72rem;
-    height: 25rem;
+/* .eula {
+    width: 90%;
     background-color: white;
     position: relative;
-    top: auto;
-    left: 5%;
-    bottom: auto;
-    right: auto;
-    margin: auto;
-    margin-top: 150px;
-    box-shadow: 0 0 2rem rgb(138, 140, 226);
+    height: 25rem;
+    margin-top: 3%;
+    padding: 5px;
+    box-shadow: 0 0 2rem rgb(106, 106, 235);
+    box-sizing: border-box;
+    border-radius: 2rem;
     border-radius: 1.75rem;
     display: inline-block;
     overflow: auto;
+} */
+
+.eula {
+    color: black;
     font-family: "Lato";
+    display: grid;
+    width: 95%;
+    height: 25rem;
+    margin-top: 3%;
+    margin-left: 4.5%;
+    padding: 5px;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "eula_content eula_content" "eula_check eula_buttons";
+    box-shadow: 0 0 2rem rgb(106, 106, 235);
+    box-sizing: border-box;
+    border-radius: 1rem;
+    overflow: auto;
 }
 
-.eula button { 
-    float: right;
-    margin-right: 5px;
+.eula_content {
+    grid-area: eula_content;
 }
 
-.chkAccept {
-    float: left;
-    margin-left: 670px;
-    margin-top: 5px;
-    size: 22px;
-    font-size: 15px;
+.eula_check {
+    grid-area: eula_check;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.eula_buttons {
+    grid-area: eula_buttons;
+    justify-self: center;
+}
+
+.btnDecline {
+    margin: 5px;
+}
+
+.btnAccept {
+    margin: 5px;
 }
