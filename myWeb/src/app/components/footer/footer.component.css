@@ -1,7 +1,8 @@
 .footer_headers {
     color: yellowgreen;
     position: relative;
-    width: 100%;
+    width: 101.2%;
+    margin-left: -0.59%;
     /* min-width: 100%; */
     display: grid;
     grid-template-rows: 0.1fr 1fr 0.2fr;
@@ -150,6 +151,31 @@
 .social h3 {
     text-align: center;
     color: black;
+    top: 23%;
+    position: relative;
+}
+
+.social_icons_container {
+    max-width: 18%;
+    margin-left: 57%;
+    position: relative;
+    bottom: 21%;
+}
+
+.facebook_icon {
+    padding: 1%;
+}
+
+.google_icon {
+    padding: 1%;
+}
+
+.linkedin_icon {
+    padding: 1%;
+}
+
+.twitter_icon {
+    padding: 1%;
 }
 
 .social ul {
@@ -169,8 +195,8 @@
 }
 
 .social img:hover {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
