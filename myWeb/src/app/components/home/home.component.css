@@ -1,6 +1,44 @@
 .text {
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "content content"
+    "image_content image"
+    "node node"
+    "node_image node_text";
     font-family: "Lato";
 }
+
+.content {
+    grid-area: content;
+}
+
+.image {
+    grid-area: image;
+    align-self: center;
+}
+
+.image_content {
+    grid-area: image_content;
+}
+
+.node {
+    grid-area: node;
+}
+
+.node_text {
+    grid-area: node_text;
+}
+
+.node_image {
+    grid-area: node_image;
+    justify-self: center;
+}
+
+/* .node_image img {
+    max-height: 90%;
+    max-width: 50%;
+} */
  
 img {
     width: 100%;
