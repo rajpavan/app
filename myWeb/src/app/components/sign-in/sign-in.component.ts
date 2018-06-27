@@ -38,7 +38,7 @@ export class SignInComponent implements OnInit {
       this.session.establish(data);
       this.router.navigate(['/homewithsession']);
     } else {
-      this.dialogBox();
+      await this.dialogBox();
     }
   }
 
