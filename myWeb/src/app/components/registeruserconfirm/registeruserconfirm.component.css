@@ -1,54 +1,59 @@
 .userinfo {
-    padding: 2rem;
-    margin: 10rem;
-    width: 70rem;
-    height: 25rem;
-    background-color: white;
-    position: relative;
-    top: auto;
-    left: 5%;
-    bottom: auto;
-    right: auto;
-    margin: auto;
-    margin-top: 150px;
-    box-shadow: 0 0 2rem rgb(138, 140, 226);
-    border-radius: 1.75rem;
-    display: inline-block;
+    color: black;
+    display: grid;
+    width: 110%;
+    margin: 5%;
+    padding: 5px;
+    grid-template-rows: 8fr 5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "user_details user_image" ". user_buttons";
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
-.userinfo li {
+.user_details {
+    grid-area: user_details;
+    align-self: flex-end;
+}
+
+.user_image {
+    grid-area: user_image;
+    justify-self: center;
+    align-self: center;
+}
+
+.user_buttons {
+    grid-area: user_buttons;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.user_details li {
     list-style-type: none;
-    margin-left: 10px;
-    padding: 10px;
+    /* margin-left: 10px;
+    padding: 10px; */
     /* background-color: black; */
 }
 
-.userinfo li h6 {
+.user_details li h6 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
 }
 
-.userinfo li h6 span {
+.user_details li h6 span {
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
      
-.userinfo img {
+.user_image img {
     width: 200px;
     height: 200px;
-    position: absolute;
-    left: 900px;
-    top: 5rem;
-}
-     
-.userinfo button {
-    float: right;
-    margin-right: 30px;
-    margin-top: 2rem;
+    position: relative;
 }
 
-.btnContinueCancel{
+.btnContinue {
     margin-top: -4%;
     margin-right: 2%;
 }

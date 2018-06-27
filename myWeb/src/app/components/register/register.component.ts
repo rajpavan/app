@@ -31,13 +31,16 @@ export class RegisterComponent implements OnInit {
 
   public async loginSuccess(data: any) {
     this.registerService.data = <ILogin>data;
+    console.log('data ==== ', data);    
 
     let newUser: boolean = await this.registerService.checkUser();
     if (newUser == true) {
+      console.log('newUser from loginSuccess === ', newUser);      
       this.dialogBox();
       this.sessionService.establish(data);
     } else {
       this.state = 'info';
+      console.log('newUser from loginSuccess === ', newUser);
     }
   }
 
