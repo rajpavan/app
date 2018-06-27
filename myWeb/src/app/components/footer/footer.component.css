@@ -1,7 +1,7 @@
 .footer_headers {
     color: yellowgreen;
     position: relative;
-    width: 100%;
+    width: 103%;
     /* min-width: 100%; */
     display: grid;
     grid-template-rows: 0.1fr 1fr 0.2fr;
@@ -148,18 +148,17 @@
 }
 
 .social h3 {
-    text-align: center;
     color: black;
+    justify-self: center;
 }
 
 .social ul {
-    margin-left: 35%;
 }
 
 .social li {
     list-style: none;
     display: inline-flex;
-    padding-right: 30px;
+    justify-self: center;
 }
 
 .social img {

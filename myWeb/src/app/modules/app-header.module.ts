@@ -8,6 +8,7 @@ import { MenuComponent } from '../components/menu/menu.component';
 import { ProfileComponent } from '../components/profile/profile.component';
 import { UseraccountComponent } from '../components/useraccount/useraccount.component';
 import { HelpComponent } from '../components/help/help.component';
+import { FooterComponent } from '../components/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -21,11 +22,13 @@ import { HelpComponent } from '../components/help/help.component';
     MenuComponent,
     ProfileComponent,
     UseraccountComponent,
-    HelpComponent
+    HelpComponent,
+    FooterComponent
   ],
 
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ]
 })
 

@@ -1,0 +1,33 @@
+.home_signin {
+    color: black;
+    position: relative;
+    width: 100%;
+    min-width: 10%;
+    /* min-width: 100%; */
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.2fr 0.1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+    "providers"
+    "."
+    "footer";
+    align-content: center;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
+    box-sizing: border-box;
+}
+
+.header {
+    grid-area: header;
+    justify-self: stretch;
+}
+
+.providers {
+    grid-area: providers;
+    justify-self: center;
+    margin: 0;
+}
+
+.footer {
+    grid-area: footer;
+    justify-self: stretch;
+}
