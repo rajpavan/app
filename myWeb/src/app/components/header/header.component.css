@@ -29,6 +29,7 @@ mat-grid-tile {
 
 .main_header {
   position: fixed;
+  font-family: "Lato";
   z-index: 3;
   width: 103%;
   top: -0.01px;
