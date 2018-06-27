@@ -1,5 +1,6 @@
 .footer_headers {
     color: yellowgreen;
+    font-family: "Lato";
     position: relative;
     width: 103%;
     /* min-width: 100%; */
@@ -12,7 +13,6 @@
     align-content: center;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
     box-sizing: border-box;
-    font-family: "Lato";
 }
  
 .whytelgro {
@@ -151,9 +151,6 @@
 .social h3 {
     color: black;
     justify-self: center;
-}
-
-.social ul {
 }
 
 .social li {

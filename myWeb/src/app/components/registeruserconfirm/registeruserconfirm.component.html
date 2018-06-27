@@ -1,21 +1,31 @@
 <div class="userinfo">
-  <ul>
-    <li>
-      <h6>First Name: <span>{{registerService.data.firstName}}</span></h6>
-    </li>
-    <li>
-      <h6>Last Name: <span>{{registerService.data.lastName}}</span></h6>
-    </li>
-    <li>
-      <h6>Email: <span>{{registerService.data.email}}</span></h6>
-    </li>
-  </ul>
+  <div class="user_details">
+    <ul>
+      <li>
+        <h6>First Name:
+          <span>{{registerService.data.firstName}}</span>
+        </h6>
+      </li>
+      <li>
+        <h6>Last Name:
+          <span>{{registerService.data.lastName}}</span>
+        </h6>
+      </li>
+      <li>
+        <h6>Email:
+          <span>{{registerService.data.email}}</span>
+        </h6>
+      </li>
+    </ul>
+  </div>
 
-  <img src="{{registerService.data.photoUrl}}">
+  <div class="user_image">
+    <img [src]="registerService.data.photoUrl">
+  </div>
 
-  <div class="btnContinueCancel">
-    <button mat-raised-button color="primary" class="btnContinue" (click)="onContinue()">Continue</button>
+  <div class="user_buttons">
     <button mat-raised-button color="warn" class="btnCancel" (click)="onCancel()">Cancel</button>
+    <button mat-raised-button color="primary" class="btnContinue" (click)="onContinue()">Continue</button>
   </div>
 
 </div>
