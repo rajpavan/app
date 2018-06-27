@@ -23,7 +23,7 @@
 
 .whytelgro_content {
     grid-area: whytelgro_content;
-    background-color: rgb(207, 230, 226);
+    background-color: rgb(207, 211, 211);
 }
 
 .whytelgro_content ul {
@@ -50,7 +50,7 @@
 
 .services_content {
     grid-area: services_content;
-    background-color: rgb(207, 230, 226);
+    background-color: rgb(207, 211, 211);
 }
 
 .services_content ul {
@@ -75,7 +75,7 @@
 
 .technology_content {
     grid-area: technology_content;
-    background-color: rgb(207, 230, 226);
+    background-color: rgb(207, 211, 211);
 }
 
 .technology_content ul {
@@ -100,7 +100,7 @@
 
 .offerings_content {
     grid-area: offerings_content;
-    background-color: rgb(207, 230, 226);
+    background-color: rgb(207, 211, 211);
 }
 
 .offerings_content ul {
@@ -126,7 +126,7 @@
 
 .support_content {
     grid-area: support_content;
-    background-color: rgb(207, 230, 226);
+    background-color: rgb(207, 211, 211);
 }
  
 .support_content li {
@@ -146,7 +146,7 @@
 
 .social {
     grid-area: social;
-    background-color: rgb(207, 230, 226);
+    background-color: rgb(207, 211, 211);
 }
 
 .social h3 {
@@ -203,5 +203,5 @@
 .copyright {
     grid-area: copyright;
     color: black;
-    background-color: rgb(207, 230, 226);
+    background-color: rgb(207, 211, 211);
 }
