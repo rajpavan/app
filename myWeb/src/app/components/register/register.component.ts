@@ -34,7 +34,7 @@ export class RegisterComponent implements OnInit {
 
     let newUser: boolean = await this.registerService.checkUser();
     if (newUser == true) {
-      this.dialogBox();
+       this.dialogBox();
       this.sessionService.establish(data);
     } else {
       this.state = 'info';
