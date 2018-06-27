@@ -5,7 +5,7 @@
     min-width: 10%;
     /* min-width: 100%; */
     display: grid;
-    grid-template-rows: 0.2fr 1fr 0.2fr 0.1fr;
+    grid-template-rows: 0.2fr 0.8fr 0.2fr 0.1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "header"
     "providers"
