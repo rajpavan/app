@@ -2,7 +2,8 @@
     color: yellowgreen;
     font-family: "Lato";
     position: relative;
-    width: 103%;
+    width: 101.2%;
+    margin-left: -0.59%;
     /* min-width: 100%; */
     display: grid;
     grid-template-rows: 0.1fr 1fr 0.2fr;
@@ -150,7 +151,35 @@
 
 .social h3 {
     color: black;
-    justify-self: center;
+    top: 23%;
+    position: relative;
+}
+
+.social_icons_container {
+    max-width: 18%;
+    margin-left: 57%;
+    position: relative;
+    bottom: 21%;
+}
+
+.facebook_icon {
+    padding: 1%;
+}
+
+.google_icon {
+    padding: 1%;
+}
+
+.linkedin_icon {
+    padding: 1%;
+}
+
+.twitter_icon {
+    padding: 1%;
+}
+
+.social ul {
+    margin-left: 35%;
 }
 
 .social li {
@@ -166,8 +195,8 @@
 }
 
 .social img:hover {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
