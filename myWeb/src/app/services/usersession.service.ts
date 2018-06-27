@@ -73,7 +73,6 @@ export class UsersessionService implements HttpInterceptor {
         if (xhr.readyState == 4 && xhr.status == 200) {
           this.jwt = xhr.response;
           console.log(this.jwt);
-          
         }
       };
       xhr.send(JSON.stringify(data));
