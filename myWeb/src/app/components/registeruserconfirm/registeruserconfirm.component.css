@@ -1,14 +1,15 @@
 .userinfo {
     color: black;
     display: grid;
+    font-family: "Lato";
     width: 110%;
     height: 25rem;
     margin-top: 3%;
     margin-left: -5%;
     padding: 5px;
-    grid-template-rows: 13fr 7fr;
-    grid-template-columns: 3fr 3fr;
-    grid-template-areas: "user_details user_image" ". user_buttons";
+    grid-template-rows: 12fr 7fr;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas: "user_details user_details_2 user_image" ". . user_buttons";
     box-shadow: 0 0 2rem rgb(106, 106, 235);
     box-sizing: border-box;
     border-radius: 2rem;
@@ -17,12 +18,19 @@
 .user_details {
     grid-area: user_details;
     align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.user_details_2 {
+    grid-area: user_details_2;
+    align-self: flex-end;
+    justify-self: flex-start;
 }
 
 .user_image {
     grid-area: user_image;
     justify-self: center;
-    align-self: center;
+    align-self: flex-end;
 }
 
 .user_buttons {
@@ -36,13 +44,21 @@
 }
 
 .user_details li h6 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
 }
 
-.user_details li h6 span {
-    padding: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+.user_details_2 ul {
+    padding: 0.5;
+}
+
+.user_details_2 li {
+    list-style-type: none;
+}
+
+.user_details_2 li h6 {
+    font-size: 1rem;
+    margin-left: 0;
+    padding-left: 0;
 }
      
 .user_image img {

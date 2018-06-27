@@ -58,7 +58,6 @@ mat-grid-tile {
 .menu {
   grid-area: menu;
   color: white;
-  justify-items: center;
   display: inline-block;
   background: linear-gradient(to bottom,rgb(111, 128, 163),rgb(50, 95, 161));
 }
@@ -70,9 +69,9 @@ mat-grid-tile {
   font-size: 130%;
   /* height: 1rem; */
   width: 3.5rem;
-  margin-top: 9px;
+  /* margin-top: 9px; */
   margin-left: 1rem;
-  margin-right: -2rem;
+  margin-right: -1.5rem;
   cursor: pointer;
 }
 
