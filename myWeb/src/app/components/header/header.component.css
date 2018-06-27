@@ -49,6 +49,7 @@ mat-grid-tile {
 
 .main_header_text a {
   text-decoration: none;
+  font-family: "Audiowide";
   color: white;
   font-size: 25px;
 }
@@ -203,13 +204,14 @@ mat-grid-tile {
   grid-template-areas: "greeting close" "details details";
   box-sizing: border-box;
   width: 100%;
-  align-content: center;
   color: black;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
 }
 
 .close {
   grid-area: close;
+  justify-self: end;
+  align-self: center;
   cursor: pointer;
 }
 

@@ -1,5 +1,6 @@
 .footer_headers {
     color: yellowgreen;
+    font-family: "Lato";
     position: relative;
     width: 101.2%;
     margin-left: -0.59%;
@@ -149,7 +150,6 @@
 }
 
 .social h3 {
-    text-align: center;
     color: black;
     top: 23%;
     position: relative;
@@ -185,7 +185,7 @@
 .social li {
     list-style: none;
     display: inline-flex;
-    padding-right: 30px;
+    justify-self: center;
 }
 
 .social img {

@@ -1,3 +1,18 @@
-<!-- <app-header loginRegister="hide" menu="hide" profile="hide"></app-header> -->
-<app-header></app-header>
-<lib-login class="login" (oncomplete)="loginSuccess($event)"></lib-login>
+<div class="home_signin">
+    <div class="header">
+        <app-header></app-header>
+    </div>
+
+    <div class="providers">
+        <lib-login (oncomplete)="loginSuccess($event)"></lib-login>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="footer">
+        <app-footer></app-footer>
+    </div>
+
+</div>

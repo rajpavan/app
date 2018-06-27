@@ -2,11 +2,11 @@
   <nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu}" (click)="$event.stopImmediatePropagation();">
     <section class="menu_header">
       <span class="greeting__text">Application Menu</span>
-      <span class="close">
-        <i class="material-icons" (click)="toggleMenu()">
+      <!-- <span class="close"> -->
+        <i class="material-icons close" (click)="toggleMenu()">
           highlight_off
         </i>
-      </span>
+      <!-- </span> -->
     </section>
 
     <section class="menu-body">
@@ -22,95 +22,6 @@
   </nav>
 </aside>
 
-<!-- <div class="mdc-grid-list">
-  <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell--span-6-desktop">
-      Half here
-    </div>
-    <div class="mdc-layout-grid__cell--span-6-desktop">
-      The other half here
-    </div>
-  </div>
-</div> -->
-
-<!-- <mat-grid-list cols="12" rowHeight="40px" gutterSize="0px" style="min-width: 100%">
-
-  <mat-grid-tile colspan="3">
-    <div (click)="toggleMenu()">
-      <i class="material-icons">
-        dehaze
-      </i>
-      <h4>Menu</h4>
-    </div>
-  </mat-grid-tile>
-
-  <mat-grid-tile colspan="6">
-    <h2>
-      <a [routerLink]="['/home']">TELGRO</a>
-    </h2>
-  </mat-grid-tile>
-
-  <mat-grid-tile colspan="3">
-    <div class="register">
-      <button mat-button>Register</button>
-    </div>
-
-    <div class="signin">
-      <h4>
-        <a [routerLink]="['/signin']">Sign-In</a>
-      </h4>
-    </div>
-  </mat-grid-tile>
-
-</mat-grid-list> -->
-
-<!-- <div class="container-fluid">
-  <div class="row">
-
-    <div class="col">
-      1 of 3
-    </div>
-
-    <div class="col-6">
-      2 of 3 (wider)
-    </div>
-
-    <div class="col" "register">
-      <h4 [routerLink]="['/register']">
-        <a>Register</a>
-      </h4>
-    </div>
-
-    <div class="col" "signin">
-      <h4>
-        <a [routerLink]="['/signin']">Sign-In</a>
-      </h4>
-    </div>
-
-  </div>
-</div> -->
-
-<!-- <div class="root__container">
-  <header class="main__header">
-
-    <div class="left__section" (click)="toggleMenu()">
-      <i class="material-icons hamburger__icon">
-        dehaze
-      </i>
-      <h3>Menu</h3>
-    </div>
-
-    <h1 [routerLink]="['/home']" class="header__text">Telgro</h1>
-
-    <div class="mode-toggle__container">
-      <a [routerLink]="['/register']" class="register">Register</a>
-      <span> | </span>
-      <a [routerLink]="['/signin']" class="signin">Sign-In</a>
-    </div>
-
-  </header>
-
-</div> -->
 <div class="main_header">
 
   <div class="menu">
@@ -132,9 +43,5 @@
       <a [routerLink]="['/signin']">Sign-In</a>
     </h4>
   </div>
-
-  <!-- <div class="signin">
-
-  </div> -->
 
 </div>

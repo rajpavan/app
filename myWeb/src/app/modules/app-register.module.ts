@@ -31,7 +31,7 @@ import { EulaComponent } from '../components/eula/eula.component';
     RegisterComponent,
     SignInComponent,
     RegisteruserconfirmComponent,
-    EulaComponent    
+    EulaComponent
   ]
 })
 
