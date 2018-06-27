@@ -1,13 +1,17 @@
-<app-header></app-header>
+<app-header login="hide"></app-header>
 
 <br><br><br>
 
-<div class="session">
+<!-- <div class="session">
   <h1>Home with Session</h1>
   <h3>First Name: {{ info.firstName }}</h3>
   <h3>Last Name: {{ info.lastName }}</h3>
   <h3>Email: {{ info.email }}</h3>
-</div>
+</div> -->
+
+<h1>Hello, {{ info.firstName }} {{ info.lastName }}</h1>
+<h3>Today you have visited Telegro website. Thank you for your presence, within a very few days the complete website will be ready, until then play around and checkout what technologies we have used. hope you have great day!!!!</h3>
+<p>We will be sending you an Email once the complete website is ready.!! we will be dropping you an email on {{ info.email }}</p>
 
 <button mat-raised-button color="warn" (click)="logOff()">Logout</button>
 <br><br><br><br><br>

@@ -36,7 +36,7 @@ mat-grid-tile {
   left: -0.01px;
   display: grid;
   grid-template-rows: 0.08fr;
-  grid-template-columns: 0.5fr 1.5fr 0.7fr;
+  grid-template-columns: 0.5fr 1.5fr 0.55fr;
   grid-template-areas: "menu header_text register";
   grid-gap: 0 0;
   box-sizing: border-box;
@@ -76,12 +76,12 @@ mat-grid-tile {
   cursor: pointer;
 }
 
-.menu h3 {
+.menu h4 {
   /* position: absolute; */
   display: inline-flex;
   margin: 0;
   margin-top: 3px;
-  font-size: 130%;
+  /* font-size: 100%; */
   height: 1rem;
   width: 4rem; 
   cursor: pointer;
