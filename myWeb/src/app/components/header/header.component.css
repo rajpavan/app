@@ -49,6 +49,7 @@ mat-grid-tile {
 
 .main_header_text a {
   text-decoration: none;
+  font-family: "Audiowide";
   color: white;
   font-size: 25px;
 }

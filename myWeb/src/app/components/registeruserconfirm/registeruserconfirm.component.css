@@ -2,14 +2,16 @@
     color: black;
     display: grid;
     width: 110%;
-    margin: 5%;
+    height: 25rem;
+    margin-top: 3%;
+    margin-left: -5%;
     padding: 5px;
-    grid-template-rows: 8fr 5fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 13fr 7fr;
+    grid-template-columns: 3fr 3fr;
     grid-template-areas: "user_details user_image" ". user_buttons";
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
+    box-shadow: 0 0 2rem rgb(106, 106, 235);
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 2rem;
 }
 
 .user_details {
@@ -25,15 +27,12 @@
 
 .user_buttons {
     grid-area: user_buttons;
-    align-self: flex-end;
+    align-self: center;
     justify-self: center;
 }
 
 .user_details li {
     list-style-type: none;
-    /* margin-left: 10px;
-    padding: 10px; */
-    /* background-color: black; */
 }
 
 .user_details li h6 {
@@ -44,7 +43,6 @@
 .user_details li h6 span {
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
      
 .user_image img {
@@ -53,7 +51,6 @@
     position: relative;
 }
 
-.btnContinue {
-    margin-top: -4%;
-    margin-right: 2%;
+.btnCancel {
+    margin: 10px;
 }
