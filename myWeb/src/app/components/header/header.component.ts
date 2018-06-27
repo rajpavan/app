@@ -9,13 +9,21 @@ import { Router } from '@angular/router';
 
 export class HeaderComponent implements OnInit {
 
+  @Input() menu: string = "show";
+  @Input() login: string = "show";
+
   private showMenu: boolean = false;
-  // private homeLinkedEnabled = null;
-  private disabled : boolean = true;
+  private showLogin: boolean = false;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
+    if (this.menu == "show") {
+      this.showMenu = true;
+    }
+    if (this.login == "show") {
+      this.showLogin = true;
+    }
   }
 
   toggleMenu() {
