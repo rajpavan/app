@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   private showMenu: boolean = false;
+  // private homeLinkedEnabled = null;
+  private disabled : boolean = true;
 
   constructor(private router: Router) { }
 
