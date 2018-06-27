@@ -36,7 +36,7 @@ mat-grid-tile {
   left: -0.01px;
   display: grid;
   grid-template-rows: 0.08fr;
-  grid-template-columns: 0.5fr 1.5fr 0.7fr;
+  grid-template-columns: 0.5fr 1.5fr 0.55fr;
   grid-template-areas: "menu header_text register";
   grid-gap: 0 0;
   box-sizing: border-box;
@@ -58,7 +58,6 @@ mat-grid-tile {
 .menu {
   grid-area: menu;
   color: white;
-  justify-items: center;
   display: inline-block;
   background: linear-gradient(to bottom,rgb(111, 128, 163),rgb(50, 95, 161));
 }
@@ -70,18 +69,17 @@ mat-grid-tile {
   font-size: 130%;
   /* height: 1rem; */
   width: 3.5rem;
-  margin-top: 9px;
+  /* margin-top: 9px; */
   margin-left: 1rem;
-  margin-right: -2rem;
+  margin-right: -1.5rem;
   cursor: pointer;
 }
 
-.menu h3 {
+.menu h4 {
   /* position: absolute; */
   display: inline-flex;
   margin: 0;
   margin-top: 3px;
-  font-size: 130%;
   height: 1rem;
   width: 4rem; 
   cursor: pointer;
