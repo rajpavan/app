@@ -76,12 +76,12 @@ mat-grid-tile {
   cursor: pointer;
 }
 
-.menu h3 {
+.menu h4 {
   /* position: absolute; */
   display: inline-flex;
   margin: 0;
   margin-top: 3px;
-  font-size: 130%;
+  font-size: 100%;
   height: 1rem;
   width: 4rem; 
   cursor: pointer;
