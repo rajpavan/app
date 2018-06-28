@@ -24,7 +24,7 @@ export class AppRegisterService {
       if(response.status == 200) {
         result = true;
         console.log('result === ', result);
-      } else {
+      } else if (response.status == 400) {
         result = false;
         console.log('result === ', result);
       }

@@ -1,9 +1,12 @@
 .footer_headers {
-    color: yellowgreen;
+    color: white;
     font-family: "Lato";
     position: relative;
     width: 101.2%;
-    margin-left: -0.59%;
+    bottom: -0.01px;
+    left: -9px;
+    /* width: 101.2%; */
+    /* margin-left: -0.59%; */
     /* min-width: 100%; */
     display: grid;
     grid-template-rows: 0.1fr 1fr 0.2fr;
@@ -12,16 +15,18 @@
     "whytelgro_content services_content technology_content offerings_content support_content"
     "copyright copyright social social social";
     align-content: center;
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
+    /* box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2); */
     box-sizing: border-box;
 }
  
 .whytelgro {
+    padding-left: 10px;
     grid-area: whytelgro;
     background: linear-gradient(to bottom,rgb(111, 128, 163),rgb(50, 95, 161));
 }
 
 .whytelgro_content {
+    padding-left: 10px;
     grid-area: whytelgro_content;
     background-color: rgb(207, 211, 211);
 }

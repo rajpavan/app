@@ -25,8 +25,8 @@
 <div class="main_header">
 
   <div class="menu">
-    <i class="material-icons" (click)="toggleMenu()">menu</i>
-    <h4 (click)="toggleMenu()">Menu</h4>
+    <i class="material-icons" (click)="toggleMenu()" *ngIf="showMenuIcon">menu</i>
+    <h4 (click)="toggleMenu()" *ngIf="showMenuIcon">Menu</h4>
   </div>
 
   <div class="main_header_text">
@@ -36,10 +36,10 @@
   </div>
 
   <div class="register">
-    <h4 [routerLink]="['/register']" class="register_button">
+    <h4 [routerLink]="['/register']" class="register_button" *ngIf="showLogin">
       <a>Register</a>
     </h4>
-    <h4 class="signin">
+    <h4 class="signin" *ngIf="showLogin">
       <a [routerLink]="['/signin']">Sign-In</a>
     </h4>
   </div>

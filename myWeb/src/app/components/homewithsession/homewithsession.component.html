@@ -1,16 +1,100 @@
-<app-header></app-header>
+<app-header login="hide"></app-header>
 
-<br><br><br>
+<br>
+<br>
+<br>
 
-<div class="session">
+<!-- <div class="session">
   <h1>Home with Session</h1>
   <h3>First Name: {{ info.firstName }}</h3>
   <h3>Last Name: {{ info.lastName }}</h3>
   <h3>Email: {{ info.email }}</h3>
+</div> -->
+<div class="image">
+  <img src="/assets/website.jpg">
 </div>
 
-<button mat-raised-button color="warn" (click)="logOff()">Logout</button>
-<br><br><br><br><br>
+<div class="session">
+
+  <div class="welcome">
+    <h2>Welcome, {{ info.firstName }} {{ info.lastName }} ({{ info.email }})</h2>
+  </div>
+
+  <div class="content">
+    <h4>
+      You have successfully registered in our Application. We will keep you updated on the changes. We are looking forward to help
+      you gain more knowledge oon our application soon...!!!!
+    </h4>
+  </div>
+
+  <div class="text">
+    <p class="p1">
+      Output Messenger Output Messenger The fast, secure & private instant messenger designed specifically for keeping remote employees
+      and multiple offices synchronously. Output Time Output Time The high-class Online Project Management & Time Tracking
+      software to manage your business better.
+    </p>
+
+    <p class="p2">
+      On-Premises version is also available. Output Desk Output Desk The smart Live Chat software allows you to convert your website
+      visitors into customers by engaging & understanding them in real-time. Output Wall Output Wall The Private Employee
+      Social wall for your Office that connects the Teams and keeps them up to date on what’s happening across entire organization.
+    </p>
+
+    <p class="p3">
+      OMessenger OMessenger Our state of art product brings your entire office in your desktop. The fast Private Instant Messaging
+      Solution for all your businesses. Contacts Clinic Contacts Clinic The complete Contacts Management Software allows
+      the Microsoft Outlook users to Automatically update, Organize & Maintain their Outlook Contacts.
+    </p>
+
+    <!-- <p class="p4">
+      OMessenger OMessenger Our state of art product brings your entire office in your desktop. The fast Private Instant Messaging
+      Solution for all your businesses. Contacts Clinic Contacts Clinic The complete Contacts Management Software allows
+      the Microsoft Outlook users to Automatically update, Organize & Maintain their Outlook Contacts.
+    </p>
+
+    <p class="p5">
+      To To Do TO TO DO The simple, neat and gentle application to manage your To-do list that lists the tasks based on the date.
+      It keeps your list simple and easy to maintain. On My Trip On My Trip The painless elegant free application helps you
+      to Prepare & Plan your Transport, Hotels, Events and Checklists to make your trip as relatively stress free.
+    </p> -->
+  </div>
+
+  <div class="text_2">
+    <p>
+      Output Messenger Output Messenger The fast, secure & private instant messenger designed specifically for keeping remote employees
+      and multiple offices synchronously. Output Time Output Time The high-class Online Project Management & Time Tracking
+      software to manage your business better.
+    </p>
+
+    <p>
+      On-Premises version is also available. Output Desk Output Desk The smart Live Chat software allows you to convert your website
+      visitors into customers by engaging & understanding them in real-time. Output Wall Output Wall The Private Employee
+      Social wall for your Office that connects the Teams and keeps them up to date on what’s happening across entire organization.
+    </p>
+
+    <p>
+      OMessenger OMessenger Our state of art product brings your entire office in your desktop. The fast Private Instant Messaging
+      Solution for all your businesses. Contacts Clinic Contacts Clinic The complete Contacts Management Software allows
+      the Microsoft Outlook users to Automatically update, Organize & Maintain their Outlook Contacts.
+    </p>
+
+    <p>
+      OMessenger OMessenger Our state of art product brings your entire office in your desktop. The fast Private Instant Messaging
+      Solution for all your businesses. Contacts Clinic Contacts Clinic The complete Contacts Management Software allows
+      the Microsoft Outlook users to Automatically update, Organize & Maintain their Outlook Contacts.
+    </p>
+
+    <p>
+      To To Do TO TO DO The simple, neat and gentle application to manage your To-do list that lists the tasks based on the date.
+      It keeps your list simple and easy to maintain. On My Trip On My Trip The painless elegant free application helps you
+      to Prepare & Plan your Transport, Hotels, Events and Checklists to make your trip as relatively stress free.
+    </p>
+  </div>
+
+  <div class="button">
+    <button mat-raised-button color="warn" (click)="logOff()">Logout</button>
+  </div>
+</div>
 
 <!-- <app-tryme></app-tryme> -->
 
