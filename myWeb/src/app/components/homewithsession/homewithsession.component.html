@@ -1,6 +1,8 @@
 <app-header login="hide"></app-header>
 
-<br><br><br>
+<br>
+<br>
+<br>
 
 <!-- <div class="session">
   <h1>Home with Session</h1>
@@ -8,13 +10,41 @@
   <h3>Last Name: {{ info.lastName }}</h3>
   <h3>Email: {{ info.email }}</h3>
 </div> -->
+<div class="image">
+    <img src="/assets/website.jpg">
+</div>
 
-<h1>Hello, {{ info.firstName }} {{ info.lastName }}</h1>
-<h3>Today you have visited Telegro website. Thank you for your presence, within a very few days the complete website will be ready, until then play around and checkout what technologies we have used. hope you have great day!!!!</h3>
-<p>We will be sending you an Email once the complete website is ready.!! we will be dropping you an email on {{ info.email }}</p>
+<div>
+  <h2>Welcome, {{ info.firstName }} {{ info.lastName }} ({{ info.email }})</h2>
+</div>
+<div>
+  <h4>Today you have visited Telegro website. Thank you for your presence, within a very few days the complete website will be
+    ready, until then play around and checkout what technologies we have used. hope you have great day!!!!</h4>
+</div>
+
+<div>
+  <h3>Technologies made this work!!</h3>
+  <ul>
+    <li>Angular 6</li>
+    <li>Node.js</li>
+    <li>MongoDB</li>
+  </ul>  
+</div>
+
+<div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris magna diam, euismod quis nibh eu, vestibulum vehicula tortor. Fusce varius convallis egestas. Curabitur faucibus magna libero, sit amet dignissim mauris iaculis a. Mauris consectetur velit nec leo facilisis, at luctus eros eleifend. Mauris orci purus, tincidunt et mollis in, malesuada non tortor. Cras vel ullamcorper orci. Cras id tellus ligula. Nam magna arcu, faucibus nec porta eget, semper sit amet arcu. Etiam et mattis neque. Praesent ex urna, pharetra vel mollis in, euismod eget magna. Nam non accumsan ipsum.
+</div>
+
+<div>
+  
+</div>
 
 <button mat-raised-button color="warn" (click)="logOff()">Logout</button>
-<br><br><br><br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <!-- <app-tryme></app-tryme> -->
 

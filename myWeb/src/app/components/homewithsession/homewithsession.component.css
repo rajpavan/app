@@ -1,3 +1,12 @@
 .session {
     font-family: "Lato";
 }
+
+.image {
+    grid-area: image;
+    align-self: center;
+}
+
+.image_content {
+    grid-area: image_content;
+}
