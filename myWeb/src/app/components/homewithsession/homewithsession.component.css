@@ -1,12 +1,66 @@
 .session {
     font-family: "Lato";
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "welcome button"
+    "content content"
+    "text text"
+    "text_2 text_2";
 }
 
-.image {
-    grid-area: image;
-    align-self: center;
+.welcome {
+    grid-area: welcome;
 }
 
-.image_content {
-    grid-area: image_content;
+.text {
+    grid-area: text;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "p1 p2 p3";
+    align-items: center;
+    justify-items: flex-start;
+    grid-column-gap: 2%;
+    justify-items: flex-start;
+}
+
+.button {
+    grid-area: button;
+    justify-self: flex-end;
+}
+
+.content {
+    grid-area: content;
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.p2 {
+    grid-area: p2;
+}
+
+.p3 {
+    grid-area: p3;
+}
+/* 
+.p4 {
+    grid-area: p4;
+}
+
+.p5 {
+    grid-area: p5;
+} */
+
+.text_2 {
+    grid-area: text_2;
+}
+
+.image img{
+    width: 100%;
+    max-height: 400px;
 }
