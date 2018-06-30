@@ -12,9 +12,9 @@ export class HeaderComponent implements OnInit {
   @Input() menuIcon: string = "show";
   @Input() login: string = "show";
 
-  private showMenu: boolean = false;
-  private showLogin: boolean = false;
-  private showMenuIcon: boolean = false;
+  public showMenu: boolean = false;
+  public showLogin: boolean = false;
+  public showMenuIcon: boolean = false;
 
   constructor(private router: Router) { }
 

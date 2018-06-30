@@ -16,16 +16,16 @@ export class RegisteruserconfirmComponent implements OnInit {
   private dialogResult;
 
   constructor(private router: Router,
-    private registerService: AppRegisterService) { }
+    public registerService: AppRegisterService) { }
 
   ngOnInit() {
   }
 
-  private onContinue() {
+  public onContinue() {
     this.oncontinue.emit(null);
   }
 
-  private async onCancel() {
+  public async onCancel() {
     this.dialogResult = await MessageBox.showDialog('Decline Confirmation', 'Are You Sure you want to Leave?', DialogBoxButtons.YesNo);
     if (this.dialogResult == 0) {
       this.registerService.data.logout();

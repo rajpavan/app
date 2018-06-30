@@ -13,7 +13,7 @@ import { LoginService } from '@twine/login';
 
 export class RegisterComponent implements OnInit {
 
-  private state: string = 'register';
+  public state: string = 'register';
   public dialogResult;
 
   constructor(private router: Router,

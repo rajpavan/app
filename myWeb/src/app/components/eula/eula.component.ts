@@ -13,7 +13,7 @@ export class EulaComponent implements OnInit {
 
   @Output() onaccept: EventEmitter<any> = new EventEmitter();
 
-  private buttonStatus = true;
+  public buttonStatus = true;
   public dialogResult;
 
   constructor(private router: Router, private registerService: AppRegisterService) { }

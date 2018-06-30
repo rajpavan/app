@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 
 export class HomewithsessionComponent implements OnInit {
 
-  private info: IUser;
+  public info: IUser;
 
   constructor(private session: UsersessionService, private router: Router) { }
 
@@ -18,7 +18,7 @@ export class HomewithsessionComponent implements OnInit {
     this.session.data.subscribe(info => this.info = info);
   }
 
-  private async logOff() {
+  public async logOff() {
     await this.session.logOut();
   }
 }

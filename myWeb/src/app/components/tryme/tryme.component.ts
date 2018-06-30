@@ -9,22 +9,22 @@ import { HttpClient } from '@angular/common/http';
 
 export class TrymeComponent implements OnInit {
 
-  private restrictedResponse;
-  private restrictedResponseError;
-  private genericResponse;
-  private dialogResult;
+  public restrictedResponse;
+  public restrictedResponseError;
+  public genericResponse;
+  public dialogResult;
 
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
   }
 
-  private tryme() {
+  public tryme() {
     this.tryGeneric();
     this.tryRestricted();
   }
 
-  private tryRestricted(): Promise<void> {
+  public tryRestricted(): Promise<void> {
     return new Promise<void>(resolve => {
       this.http.post('http://localhost:3000/api/restricted', '')
         .subscribe(res => {
@@ -36,7 +36,7 @@ export class TrymeComponent implements OnInit {
     })
   }
 
-  private tryGeneric(): Promise<void> {
+  public tryGeneric(): Promise<void> {
     return new Promise<void>(resolve => {
       this.http.post('http://localhost:3000/api/generic', '')
         .subscribe(res => {

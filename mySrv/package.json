@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "main work application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "cors": "^2.8.4",
+    "express": "*",
+    "google-auth-library": "^1.4.0",
+    "jsonwebtoken": "^8.2.1",
+    "jsonwebtoken-refresh": "^5.7.0",
+    "mongoose": "*",
+    "request": "^2.85.0",
+    "superagent": "^3.8.3"
+  },
+  "author": "vZen Team",
+  "license": "ISC",
+  "devDependencies": {
+    "supertest": "^3.1.0"
+  }
+}
